@@ -1,0 +1,18 @@
+INFO:     Started server process [27875]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56020 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56022 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33026 - "GET /?v=image-ui-fix HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33026 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33028 - "GET /?v=image-ui-fix HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33028 - "GET /static/css/style.css?v=symoneural1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48228 - "GET /static/js/app.js?v=symoneural1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48228 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48228 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34256 - "GET /?v=image-ui-fix HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34256 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34272 - "GET /outputs/symon_image_1783166810.png HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52692 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52692 - "GET /outputs/symon_image_1783167170.png HTTP/1.1" 200 OK

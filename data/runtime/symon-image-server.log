@@ -1,0 +1,166 @@
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 15872 MiB):
+  Device 0: NVIDIA GeForce RTX 5070 Ti, compute capability 12.0, VMM: yes, VRAM: 15872 MiB
+[INFO ] stable-diffusion.cpp:401  - loading model from '/home/google/SyMoNeuRaL_CLEAN/models/sd/v1-5-pruned-emaonly.safetensors'
+[INFO ] model_loader.cpp:239  - load /home/google/SyMoNeuRaL_CLEAN/models/sd/v1-5-pruned-emaonly.safetensors using safetensors format
+[INFO ] stable-diffusion.cpp:535  - Version: SD 1.x 
+[INFO ] stable-diffusion.cpp:561  - Weight type stat:                      f32: 1131 
+[INFO ] stable-diffusion.cpp:562  - Conditioner weight type stat:          f32: 196  
+[INFO ] stable-diffusion.cpp:563  - Diffusion model weight type stat:      f32: 686  
+[INFO ] stable-diffusion.cpp:564  - VAE weight type stat:                  f32: 248  
+[WARN ] stable-diffusion.cpp:597  - in mode 'immediately', LoRAs will cause extra memory usage with mmap
+[INFO ] model_loader.cpp:836  - using mmap for '/home/google/SyMoNeuRaL_CLEAN/models/sd/v1-5-pruned-emaonly.safetensors'
+  |##################################################| 1/1 - 0.35MB/s[K
+[INFO ] model_loader.cpp:1245 - loading tensors completed, taking 0.01s (read: 0.00s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s)
+[INFO ] stable-diffusion.cpp:995  - using VAE for encoding / decoding
+[INFO ] auto_encoder_kl.hpp:527  - vae decoder: ch = 128
+[INFO ] stable-diffusion.cpp:1099 - Using flash attention
+[INFO ] stable-diffusion.cpp:1113 - Using flash attention in the diffusion model
+[INFO ] stable-diffusion.cpp:1229 - total params memory size = 2784.45MB (VRAM 2784.45MB, RAM 0.00MB): text_encoders 469.44MB(VRAM), diffusion_model 2155.33MB(VRAM), vae 159.68MB(VRAM), controlnet 0.00MB(N/A), extensions 0.00MB(N/A)
+[INFO ] stable-diffusion.cpp:1323 - running in eps-prediction mode
+[INFO ] main.cpp:148  - listening on: http://127.0.0.1:18082
+[INFO ] stable-diffusion.cpp:4650 - generate_image 512x512
+[INFO ] denoiser.hpp:1022 - get_sigmas with discrete scheduler
+[INFO ] stable-diffusion.cpp:3590 - sampling using Euler A method
+[INFO ] ggml_graph_cut.cpp:938  - clip build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - clip graph cut max_vram=14336.00 MB merged 14 segments -> 1 segments
+  |####                                              | 14/196 - 124.51MB/s[K  |##################################################| 196/196 - 2.27GB/s[K
+[INFO ] model_loader.cpp:1245 - loading tensors completed, taking 0.20s (read: 0.02s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.08s)
+[INFO ] stable-diffusion.cpp:4348 - get_learned_condition completed, taking 1.13s
+[INFO ] stable-diffusion.cpp:4696 - generating image: 1/1 - seed 10805304
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |##                                                | 23/686 - 59.81MB/s[K  |####################                              | 265/686 - 3.47GB/s[K  |################################                  | 431/686 - 3.76GB/s[K  |#######################################           | 534/686 - 3.83GB/s[K  |##################################################| 686/686 - 3.99GB/s[K
+[INFO ] model_loader.cpp:1245 - loading tensors completed, taking 0.80s (read: 0.13s, memcpy: 0.00s, convert: 0.22s, copy_to_backend: 0.25s)
+  |==>                                               | 1/20 - 3.48s/it[K  |=====>                                            | 2/20 - 12.39it/s[K  |=======>                                          | 3/20 - 12.37it/s[K  |==========>                                       | 4/20 - 12.35it/s[K  |============>                                     | 5/20 - 12.37it/s[K  |===============>                                  | 6/20 - 12.26it/s[K  |=================>                                | 7/20 - 12.35it/s[K  |====================>                             | 8/20 - 12.31it/s[K  |======================>                           | 9/20 - 12.39it/s[K  |=========================>                        | 10/20 - 12.37it/s[K  |===========================>                      | 11/20 - 12.36it/s[K  |==============================>                   | 12/20 - 12.25it/s[K  |================================>                 | 13/20 - 12.39it/s[K  |===================================>              | 14/20 - 12.39it/s[K  |=====================================>            | 15/20 - 12.39it/s[K  |========================================>         | 16/20 - 12.40it/s[K  |==========================================>       | 17/20 - 12.38it/s[K  |=============================================>    | 18/20 - 12.37it/s[K  |===============================================>  | 19/20 - 12.36it/s[K  |==================================================| 20/20 - 12.32it/s[K
+[INFO ] stable-diffusion.cpp:4728 - sampling completed, taking 5.03s
+[INFO ] stable-diffusion.cpp:4740 - generating 1 latent images completed, taking 5.03s
+[INFO ] stable-diffusion.cpp:4373 - decoding 1 latents
+[INFO ] ggml_graph_cut.cpp:938  - vae build cached graph cut plan done (taking 0 ms)
+  |############                                      | 33/140 - 60.80MB/s[K  |##################################################| 140/140 - 934.60MB/s[K
+[INFO ] model_loader.cpp:1245 - loading tensors completed, taking 0.20s (read: 0.01s, memcpy: 0.00s, convert: 0.02s, copy_to_backend: 0.01s)
+  |=====>                                            | 1/9 - 1.32it/s[K  |===========>                                      | 2/9 - 27.03it/s[K  |================>                                 | 3/9 - 27.78it/s[K  |======================>                           | 4/9 - 28.57it/s[K  |===========================>                      | 5/9 - 28.57it/s[K  |=================================>                | 6/9 - 28.57it/s[K  |======================================>           | 7/9 - 27.78it/s[K  |============================================>     | 8/9 - 28.57it/s[K  |==================================================| 9/9 - 28.57it/s[K
+[INFO ] stable-diffusion.cpp:4421 - latent 1 decoded, taking 1.04s
+[INFO ] stable-diffusion.cpp:4425 - decode_first_stage completed, taking 1.04s
+[INFO ] stable-diffusion.cpp:4878 - generate_image completed in 7.20s
+ggml_cuda_init: found 1 CUDA devices (Total VRAM: 15872 MiB):
+  Device 0: NVIDIA GeForce RTX 5070 Ti, compute capability 12.0, VMM: yes, VRAM: 15872 MiB
+[INFO ] stable-diffusion.cpp:401  - loading model from '/home/google/SyMoNeuRaL_CLEAN/models/sd/v1-5-pruned-emaonly.safetensors'
+[INFO ] model_loader.cpp:239  - load /home/google/SyMoNeuRaL_CLEAN/models/sd/v1-5-pruned-emaonly.safetensors using safetensors format
+[INFO ] stable-diffusion.cpp:535  - Version: SD 1.x 
+[INFO ] stable-diffusion.cpp:561  - Weight type stat:                      f32: 1131 
+[INFO ] stable-diffusion.cpp:562  - Conditioner weight type stat:          f32: 196  
+[INFO ] stable-diffusion.cpp:563  - Diffusion model weight type stat:      f32: 686  
+[INFO ] stable-diffusion.cpp:564  - VAE weight type stat:                  f32: 248  
+[WARN ] stable-diffusion.cpp:597  - in mode 'immediately', LoRAs will cause extra memory usage with mmap
+[INFO ] model_loader.cpp:836  - using mmap for '/home/google/SyMoNeuRaL_CLEAN/models/sd/v1-5-pruned-emaonly.safetensors'
+  |##################################################| 1/1 - 0.35MB/s[K
+[INFO ] model_loader.cpp:1245 - loading tensors completed, taking 0.01s (read: 0.00s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.00s)
+[INFO ] stable-diffusion.cpp:995  - using VAE for encoding / decoding
+[INFO ] auto_encoder_kl.hpp:527  - vae decoder: ch = 128
+[INFO ] stable-diffusion.cpp:1099 - Using flash attention
+[INFO ] stable-diffusion.cpp:1113 - Using flash attention in the diffusion model
+[INFO ] stable-diffusion.cpp:1229 - total params memory size = 2784.45MB (VRAM 2784.45MB, RAM 0.00MB): text_encoders 469.44MB(VRAM), diffusion_model 2155.33MB(VRAM), vae 159.68MB(VRAM), controlnet 0.00MB(N/A), extensions 0.00MB(N/A)
+[INFO ] stable-diffusion.cpp:1323 - running in eps-prediction mode
+[INFO ] main.cpp:148  - listening on: http://127.0.0.1:18082
+[INFO ] stable-diffusion.cpp:4650 - generate_image 512x512
+[INFO ] denoiser.hpp:1022 - get_sigmas with discrete scheduler
+[INFO ] stable-diffusion.cpp:3590 - sampling using Euler A method
+[INFO ] ggml_graph_cut.cpp:938  - clip build cached graph cut plan done (taking 0 ms)
+[INFO ] ggml_graph_cut.cpp:901  - clip graph cut max_vram=14336.00 MB merged 14 segments -> 1 segments
+  |######                                            | 21/196 - 266.60MB/s[K  |##################################################| 196/196 - 2.27GB/s[K
+[INFO ] model_loader.cpp:1245 - loading tensors completed, taking 0.20s (read: 0.02s, memcpy: 0.00s, convert: 0.00s, copy_to_backend: 0.08s)
+[INFO ] stable-diffusion.cpp:4348 - get_learned_condition completed, taking 1.16s
+[INFO ] stable-diffusion.cpp:4696 - generating image: 1/1 - seed 347835855
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |##                                                | 24/686 - 450.44MB/s[K  |####################                              | 265/686 - 3.56GB/s[K  |################################                  | 428/686 - 3.61GB/s[K  |######################################            | 518/686 - 3.97GB/s[K  |##################################################| 686/686 - 3.99GB/s[K
+[INFO ] model_loader.cpp:1245 - loading tensors completed, taking 0.80s (read: 0.13s, memcpy: 0.00s, convert: 0.22s, copy_to_backend: 0.26s)
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |==>                                               | 1/20 - 3.52s/it[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |=====>                                            | 2/20 - 9.13it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |=======>                                          | 3/20 - 9.15it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |==========>                                       | 4/20 - 9.14it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |============>                                     | 5/20 - 8.92it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |===============>                                  | 6/20 - 9.02it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |=================>                                | 7/20 - 9.13it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |====================>                             | 8/20 - 9.06it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |======================>                           | 9/20 - 9.12it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |=========================>                        | 10/20 - 9.11it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |===========================>                      | 11/20 - 9.05it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |==============================>                   | 12/20 - 9.13it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |================================>                 | 13/20 - 9.13it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |===================================>              | 14/20 - 9.08it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |=====================================>            | 15/20 - 9.08it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |========================================>         | 16/20 - 9.16it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |==========================================>       | 17/20 - 9.09it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |=============================================>    | 18/20 - 9.12it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 1 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |===============================================>  | 19/20 - 9.15it/s[K[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+[INFO ] ggml_graph_cut.cpp:938  - unet build cached graph cut plan done (taking 2 ms)
+[INFO ] ggml_graph_cut.cpp:901  - unet graph cut max_vram=14336.00 MB merged 22 segments -> 1 segments
+  |==================================================| 20/20 - 9.12it/s[K
+[INFO ] stable-diffusion.cpp:4728 - sampling completed, taking 5.61s
+[INFO ] stable-diffusion.cpp:4740 - generating 1 latent images completed, taking 5.61s
+[INFO ] stable-diffusion.cpp:4373 - decoding 1 latents
+[INFO ] ggml_graph_cut.cpp:938  - vae build cached graph cut plan done (taking 0 ms)
+  |##########                                        | 26/140 - 55.43MB/s[K  |##################################################| 140/140 - 934.60MB/s[K
+[INFO ] model_loader.cpp:1245 - loading tensors completed, taking 0.20s (read: 0.01s, memcpy: 0.00s, convert: 0.02s, copy_to_backend: 0.01s)
+  |=====>                                            | 1/9 - 1.29it/s[K  |===========>                                      | 2/9 - 27.03it/s[K  |================>                                 | 3/9 - 28.57it/s[K  |======================>                           | 4/9 - 28.57it/s[K  |===========================>                      | 5/9 - 27.78it/s[K  |=================================>                | 6/9 - 28.57it/s[K  |======================================>           | 7/9 - 28.57it/s[K  |============================================>     | 8/9 - 28.57it/s[K  |==================================================| 9/9 - 27.78it/s[K
+[INFO ] stable-diffusion.cpp:4421 - latent 1 decoded, taking 1.06s
+[INFO ] stable-diffusion.cpp:4425 - decode_first_stage completed, taking 1.06s
+[INFO ] stable-diffusion.cpp:4878 - generate_image completed in 7.83s

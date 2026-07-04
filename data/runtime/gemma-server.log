@@ -7,3 +7,4 @@
 0.02.702.152 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 8192, kv_unified = 'true'
 0.02.707.866 I srv  symon_llm_se: model loaded
 0.02.707.869 I srv  symon_llm_se: listening on http://127.0.0.1:18081
+254.36.629.706 I srv    operator(): operator(): cleaning up before exit...

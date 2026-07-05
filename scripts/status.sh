@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
 set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
 
-cd "$(dirname "${BASH_SOURCE[0]}")/.."
-
-echo "===== health ====="
-curl -sS http://127.0.0.1:8000/health 2>/dev/null | python3 -m json.tool || echo "manager not responding"
-
-echo
-echo "===== ports ====="
-ss -ltnp | grep -E ':8000|:18080|:18081|:18082' || echo "no SyMoNeuRaL ports listening"
-
-echo
-echo "===== processes ====="
-ps aux | grep -E 'uvicorn|symon-llm-server|symon-image-server|llama-server' | grep -v grep || echo "no SyMoNeuRaL processes"
+echo "===== symoneural manager ====="
+PID="$(cat data/runtime/symon-manager.pid 2>/dev/null || true)"
+if [ -n "${PID:-}" ] && kill -0 "$PID" 2>/dev/null; then
+  echo "running pid=$PID"
+else
+  echo "not running"
+fi
 
 echo
-echo "===== GPU ====="
-nvidia-smi
+echo "===== public port ====="
+ss -ltnp | grep ':8000' || echo "8000 not listening"
+
+echo
+echo "===== compile ====="
+"$ROOT/.venv/bin/python" -m py_compile app/main.py app/symoneural.py app/workers/*.py app/comms/*.py app/runtime/*.py

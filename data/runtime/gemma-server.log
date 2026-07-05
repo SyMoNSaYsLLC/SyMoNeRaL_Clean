@@ -1,10 +1,10 @@
-0.00.101.663 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
-0.00.232.292 I srv    load_model: loading model '/home/google/SyMoNeuRaL_CLEAN/models/llm/gemma-4-12b-it-Q4_K_M.gguf'
-0.01.243.650 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
-0.01.244.024 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
-0.01.245.160 W load: control-looking token:    106 '<turn|>' was not control-type; this is probably a bug in the model. its type will be overridden
-0.01.263.196 W load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
-0.02.702.152 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 8192, kv_unified = 'true'
-0.02.707.866 I srv  symon_llm_se: model loaded
-0.02.707.869 I srv  symon_llm_se: listening on http://127.0.0.1:18081
-254.36.629.706 I srv    operator(): operator(): cleaning up before exit...
+0.00.016.243 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.093.633 I srv    load_model: loading model '/home/google/SyMoNeuRaL_CLEAN/models/llm/gemma-4-12b-it-Q4_K_M.gguf'
+0.01.008.140 W load: control-looking token:    212 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.008.557 W load: control-looking token:     50 '<|tool_response>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.009.885 W load: control-looking token:    106 '<turn|>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.029.593 W load: special_eog_ids contains '<|tool_response>', removing '</s>' token from EOG list
+0.06.730.534 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 8192, kv_unified = 'true'
+0.06.736.240 I srv  symon_llm_se: model loaded
+0.06.736.244 I srv  symon_llm_se: listening on http://127.0.0.1:18081
+19.42.497.718 I srv    operator(): operator(): cleaning up before exit...

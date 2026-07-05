@@ -1,7 +1,7 @@
-0.00.108.280 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
-0.00.231.299 I srv    load_model: loading model '/home/google/SyMoNeuRaL_CLEAN/models/llm/qwen2.5-coder-1.5b-instruct-q8_0.gguf'
-0.00.544.640 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
-0.00.957.290 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 4096, kv_unified = 'true'
-0.00.960.975 I srv  symon_llm_se: model loaded
-0.00.960.979 I srv  symon_llm_se: listening on http://127.0.0.1:18080
-254.36.629.395 I srv    operator(): operator(): cleaning up before exit...
+0.00.185.837 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.286.087 I srv    load_model: loading model '/home/google/SyMoNeuRaL_CLEAN/models/llm/qwen2.5-coder-1.5b-instruct-q8_0.gguf'
+0.00.595.175 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.02.143.340 I srv    load_model: initializing, n_slots = 4, n_ctx_slot = 4096, kv_unified = 'true'
+0.02.151.648 I srv  symon_llm_se: model loaded
+0.02.151.653 I srv  symon_llm_se: listening on http://127.0.0.1:18080
+19.45.430.327 I srv    operator(): operator(): cleaning up before exit...

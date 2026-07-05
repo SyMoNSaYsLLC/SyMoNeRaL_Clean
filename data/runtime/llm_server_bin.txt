@@ -1,1 +1,0 @@
-/home/google/SyMoNeuRaL_MCP/bin/symon-llm-server

@@ -10,3 +10,10 @@ bin/
 
 *.log
 *.pid
+
+# runtime/generated
+data/runtime/
+data/output/
+__pycache__/
+*.pyc
+*.pyo
